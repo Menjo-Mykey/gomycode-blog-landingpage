@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE EXPLORER</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom font imports */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    /* Ensuring the images in featured posts are responsive */
+    .featured-img {
+      object-fit: cover;
+      height: 250px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-blue-600 to-teal-500 text-white py-4 shadow-lg">
+    <div class="container mx-auto flex items-center justify-between px-6">
+      <div class="text-3xl font-bold">Travel Blog</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-gray-200 transition">Home</a></li>
+          <li><a href="#" class="hover:text-gray-200 transition">Destinations</a></li>
+          <li><a href="#" class="hover:text-gray-200 transition">Categories</a></li>
+          <li><a href="#" class="hover:text-gray-200 transition">About</a></li>
+          <li><a href="#" class="hover:text-gray-200 transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Featured Posts Section -->
+  <section class="container mx-auto py-12 px-6">
+    <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Featured Posts</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Paris postcard -->
+      <div class="bg-white shadow-xl rounded-lg overflow-hidden transform hover:scale-105 transition-transform">
+        <img src="images/paris.city.jpeg" alt="Eiffel Tower" class="w-full featured-img">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3 text-gray-800">Exploring Paris</h3>
+          <p class="text-gray-600 mb-4">Discover the beauty and romance of Paris, from iconic landmarks to hidden gems.</p>
+          <a href="#" class="text-teal-500 hover:underline">Read more</a>
+        </div>
+      </div>
+      <!-- Alps postcard -->
+      <div class="bg-white shadow-xl rounded-lg overflow-hidden transform hover:scale-105 transition-transform">
+        <img src="images/alps.jpg" alt="Alps" class="w-full featured-img">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3 text-gray-800">Adventure in the Alps</h3>
+          <p class="text-gray-600 mb-4">Get ready for an adrenaline-pumping adventure in the stunning Alps mountains.</p>
+          <a href="#" class="text-teal-500 hover:underline">Read more</a>
+        </div>
+      </div>
+      <!-- Beach postcard -->
+      <div class="bg-white shadow-xl rounded-lg overflow-hidden transform hover:scale-105 transition-transform">
+        <img src="images/beach.jpg" alt="Indian Ocean Beaches" class="w-full featured-img">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-3 text-gray-800">Indian Ocean Beaches</h3>
+          <p class="text-gray-600 mb-4">Relax and unwind on the world’s most beautiful beaches with our expert guides.</p>
+          <a href="#" class="text-teal-500 hover:underline">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Section -->
+  <section class="bg-teal-100 py-8">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Categories</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-teal-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-teal-500 transition">Adventure</span>
+        <span class="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-green-500 transition">Beach</span>
+        <span class="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-red-500 transition">City</span>
+        <span class="bg-yellow-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-yellow-500 transition">Cultural</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Posts Section -->
+  <section class="container mx-auto py-12 px-6">
+    <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Recent Posts</h2>
+    <ul class="space-y-6">
+      <!-- Post 1 -->
+      <li class="border-b border-gray-300 pb-4">
+        <h3 class="text-2xl font-semibold text-gray-800">Discover Tokyo: A Complete Guide</h3>
+        <p class="text-gray-600">Published on August 5, 2024</p>
+      </li>
+      <!-- Post 2 -->
+      <li class="border-b border-gray-300 pb-4">
+        <h3 class="text-2xl font-semibold text-gray-800">Top 10 Hikes in the Rockies</h3>
+        <p class="text-gray-600">Published on July 28, 2024</p>
+      </li>
+      <!-- Post 3 -->
+      <li class="border-b border-gray-300 pb-4">
+        <h3 class="text-2xl font-semibold text-gray-800">Exploring the History of Rome</h3>
+        <p class="text-gray-600">Published on July 15, 2024</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Newsletter Subscription Form -->
+  <section class="bg-teal-500 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+      <p class="mb-6">Get the latest travel tips and guides directly to your inbox.</p>
+      <form class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <input type="email" placeholder="Enter your email" class="p-3 rounded-lg w-full sm:w-80 text-black border-none focus:ring-2 focus:ring-teal-300" required>
+        <button type="submit" class="bg-teal-600 hover:bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold transition">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-6">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+      <p class="text-center md:text-left mb-4 md:mb-0">© 2024 THE EXPLORER. All rights reserved.</p>
+      <div class="flex space-x-4 mb-4 md:mb-0">
+        <a href="#" class="hover:text-white transition"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fab fa-youtube fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include Font Awesome for icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
